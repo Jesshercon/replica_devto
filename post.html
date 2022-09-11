@@ -232,9 +232,9 @@ d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4
         
       </div>
     </div>
-    
+    <hr>
 <!-- DISCUSSION SECTION -->
-<section class="section__container comments m-5">
+<section class="section__container comments m-4 p-4">
   <div class="section__container-elements d-flex align-content-center justify-content-between">
     <h4>Discussion (1)</h4>
     <div class="section__container-button ">
@@ -252,9 +252,54 @@ d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4
         <label for="floatingTextarea2">Add to the discussion</label>
       </div>
     </form>
+    </div>
+    <div class="comments__container d-flex justify-content-between mt-4">
+      <span class="d-flex align-content-center ">
+        <img class="rounded-circle me-2 bg-dark" src="https://res.cloudinary.com/practicaldev/image/fetch/s--qpBPANph--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/860666/2fd34304-6aba-4e0d-8e55-a97ebcfe1a90.png" width="32" height="32" alt="pic" loading="lazy">
+      </span>
+      <form class="comments__container-box w-100 justify-content-center" action="">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Add to the discussion" id="floatingTextarea2" style="height: 100px">
+  nice
+          </textarea>
+        </div>
+      </form>
+      </div>
+      <footer class="comment__footer print-hidden d-flex ms-5 gap-1 mt-1">
+        <div class=" comment__footer-icon">
+          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" class="crayons-icon reaction-icon not-reacted"><title id="accljcs62f1fpil2jakf9jhn5jsrogap">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+           
+              <span data-testid="tooltip" class="crayons-tooltip__content">
+                Like
+              </span>
+          
+          </button>
+        </div>
+        <div class=" comment__footer-icon">
+          <a class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a9teu7ryxzi42o4r2p0stwx3nb91c90a" class="crayons-icon reaction-icon not-reacted"><title id="a9teu7ryxzi42o4r2p0stwx3nb91c90a">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+    
+           <span class="hidden m:inline-block">Reply</span>
+          </a>
+        </div>
+      </footer>
+      <div class="terms__footer d-flex mt-4 justify-content-center">
+<nav class="block nav-item d-flex">
+  <a href="/code-of-conduct" class="nav-link terms__footer-link link-secondary">Code of Conduct</a>
+  <span class="opacity-25 px-2" role="presentation">•</span>
+  <a href="/report-abuse" class="nav-link terms__footer-link link-secondary">Report abuse</a>
+</nav>
+      </div>
+</section>
   </div>
 
-</section>
+  <!-- DID YOU KNOW CARD -->
+  <div class="card mt-2 text-bg-light d-flex align-content-center">
+    <div class="card-body ">
+  <p class="fw-bold">🤔 Did you know?</p>
+  <p class="mb-0 ">🌚 Dark mode is available in <a class="nav-link link-primary" href="">Settings.</a> </p>
+    </div>
   </div>
 </div>
 
