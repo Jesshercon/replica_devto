@@ -23,30 +23,73 @@
   </head>
   <body>
 
-    <header container-lg>
-      <div class="div div__header-container">
-        <nav class="navbar bg-light">
+    <!-- <header container-lg>
+      <div class="div div__header-container"> -->
+        <!-- <nav class="navbar bg-light">
           <div class="container d-flex justify-content-between">
             <div class="div div__container-img">
               <a class="navbar-brand" href="#"><img class="div__nav-menu" src="./assets/resized_logo_UQww2soKuUsjaOGNB38o.png" alt=""></a>
-            </div>
+            </div> -->
             <!-- Bar container -->
-            <div class="container text-start col align-items-start">
+            <!-- <div class="container text-start col align-items-start">
               <form class="d-flex w-25" role="search">
                 <input class="form-control me-2 d-block p-2" type="search" placeholder="Search..." aria-label="Search">
               </form>
-            </div>
+            </div> -->
             <!-- profile button -->
-            <div class="div div__nav-profile d-flex h-100 ml-auto">
+            <!-- <div class="div div__nav-profile d-flex h-100 ml-auto">
               <button class="btn btn-outline-primary" type="submit">Create post</button>
               <div class="div div__link-notifications">
                 <a href="" class="a a__notifications"><img src="./assets/notification.png" alt="" class="img img__button-notification"></a>
               </div>
             </div>
           </div>
-        </nav>
-    </div>
-    </header>
+        </nav> -->
+    <!-- </div>
+    </header> -->
+
+      <!-- NAVBAR -->
+      <nav class="navbar" style="background-color: #FFFFFF" ;>
+        <div class="container d-flex">
+          <!-- Logo y search bar se colocan a la izquierda -->
+          <div class="d-flex">
+            <div class="img_devto-logo me-3">
+              <img src="/assets/devto_logo.svg" alt="" />
+            </div>
+            <form class="form__navbar" action="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search..." />
+                <button class="btn btn-search" type="button">
+                  <img width="20" src="/assets/loupe.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- create-post button, bell and avatar are placed to the right -->
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn btn-outline-purple fw-bold" type="submit">
+              Create Post
+            </button>
+            <img
+            class="bell__notification-icon"
+            src="/assets/campana_notificiation.png"
+            alt=""
+            />
+            <button
+            type="button"
+            class="avatar avatar__button p-1"
+            id="member-menu-button"
+            >
+            <img
+            class="avatar__icon-image rounded-circle"
+            alt=""
+            id="nav-profile-image"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--iEKpXQPg--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/922746/4331f4ce-8208-4936-bed4-d88204212fcd.jpeg"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
 
 
   </body>
