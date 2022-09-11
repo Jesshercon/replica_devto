@@ -27,8 +27,11 @@
   ></script>
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar" style="background-color: #ffffff" ;>
     <div class="container d-flex">
+      <!-- Logo y search bar se colocan a la izquierda -->
       <div class="d-flex">
         <div class="img_devto-logo me-3">
           <img src="/assets/devto_logo.svg" alt="" />
@@ -36,13 +39,13 @@
         <form class="form__navbar" action="">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search..." />
-            <button class="btn btn-search" type="button" id="button-addon2">
+            <button class="btn btn-search" type="button">
               <img width="20" src="/assets/loupe.svg" alt="" />
             </button>
           </div>
         </form>
       </div>
-      
+      <!-- create-post button, bell and avatar are placed to the right -->
       <div class="d-flex align-items-center gap-3">
         <button class="btn btn-outline-purple fw-bold" type="submit">
           Create Post
@@ -67,9 +70,11 @@
     </div>
   </div>
 </nav>
-
+<!-- Grid container asides and main -->
 <div class="container container__post pt-5">
   <div class="row">
+
+    <!-- ASIDE LEFT -->
     <div class="col flex-column d-flex">
       <!-- ICON HEART -->
       <svg
@@ -138,6 +143,7 @@ d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4
 ></path>
 </svg>
 </div>
+<!-- MAIN ARTICLES -->
 <div class="col-7">
   <div class="card card__main">
     <img
@@ -266,6 +272,7 @@ d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4
       </div>
     </div>
   </div>
+  <!-- Second card more from... -->
   <div class="card rounded-3">
     <h4 class="fs-5 fw-bold p-3 m-0">
       More from <a href="" class="link-purple">IroncladDev</span>
