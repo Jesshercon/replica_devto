@@ -30,16 +30,20 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar container-lg" style="background-color: #FFFFFF" ;>
-    <div class="container d-flex justify-content-between">
+  <nav class="navbar sticky-top container-lg" style="background-color: #FFFFFF" ;>
+    <div class="container-lg d-flex justify-content-between">
       <!-- Logo y search bar se colocan a la izquierda -->
       <div class="d-flex">
         <div class="img_devto-logo me-3">
-          <a class="navbar-brand" href=""><img src="/assets/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" /></a>
+          <a class="navbar-brand" href="">
+            <img class="div__nav-menu d-flex" src="/assets/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" />
+          </a>
         </div>
+        <div class="container text-start col align-items-start">
         <form class="form__navbar" action="">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search..." />
+          </div>
             <button class="btn btn-search" type="button">
               <img width="20" src="/assets/loupe.svg" alt="" />
             </button>
