@@ -1,24 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Replica Dev.To</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- CSS only -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <nav class="navbar" style="background-color: #ffffff" ;>
+    <div class="container d-flex">
+      <div class="d-flex">
+        <div class="img_devto-logo me-3">
+          <img src="/assets/devto_logo.svg" alt="" />
+        </div>
+        <form class="form__navbar" action="">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search..." />
+            <button class="btn btn-search" type="button" id="button-addon2">
+              <img width="20" src="/assets/loupe.svg" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-outline-purple fw-bold" type="submit">
+          Create Post
+        </button>
+        <img
+        class="bell__notification-icon"
+        src="/assets/campana_notificiation.png"
+        alt=""
+        />
+        <button
+        type="button"
+        class="avatar avatar__button p-1"
+        id="member-menu-button"
+        >
+        <img
+        class="avatar__icon-image rounded-circle"
+        alt=""
+        id="nav-profile-image"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--iEKpXQPg--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/922746/4331f4ce-8208-4936-bed4-d88204212fcd.jpeg"
+        />
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container container__post pt-5">
+  <div class="row">
+    <div class="col flex-column d-flex">
+      <!-- ICON HEART -->
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      role="img"
+      aria-hidden="true"
+      class="container__icon"
+      >
+      <path
+      d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z"
+      ></path>
+    </svg>
+    <span>3</span>
+    <!-- ICON UNICORN -->
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    role="img"
+    aria-hidden="true"
+    class="container__icon"
+    >
+    <path
+    d="M5.645 8.013c.013-.265-.261-.323-.4-.183-1.16 1.17-1.822 3.865-.344 7.32.294.961 1.938 3.19.84 6.131l-.003.006c-.094.255.206.404.366.263 1.395-1.226 1.933-3.593 1.1-6.375-.488-1.657-1.955-4.226-1.559-7.162zm-3.22 2.738c.05-.137-.124-.417-.326-.225-.939.893-1.316 2.863-.976 4.605.547 2.878 2.374 3.526 2.066 6.629-.028.102.176.38.348.154 1.546-2.033.409-4.453-.241-6.006-1.005-2.386-1.087-4.118-.871-5.157z"
+    fill="#08090A"
+    ></path>
+    <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M13.622 7.223l8.579-3.68c.598-.256 1.087.547.6.985l-6.618 5.941c.881 2.043 2.738 6.34 2.931 6.775 1.348 3.031-2.055 4.918-3.807 3.583a7.027 7.027 0 01-.623-.574c-.974-.965-2.419-2.398-5.207-1.877.284-2.115-.313-3.737-.883-5.288-.38-1.032-.747-2.032-.837-3.124-.346-3.329 3.763-8.23 4.696-7.953.386.115.326 1.229.266 2.319-.051.948-.102 1.88.143 2.12.145.142.428.43.76.773zM11.5 16.5l2.5.5 2.5 2 1-.5-2-4.5-1.5-4-1.5-1-1-1-1-1.5L10 8l-.5 1.5 1 2.5 1 4.5z"
+    ></path>
+  </svg>
+  <span>2</span>
+  <!-- ICON TAG -->
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  role="img"
+  aria-hidden="true"
+  class="container__icon"
+  >
+  <path
+  d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+  ></path>
+</svg>
+<span>2</span>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="24"
+height="24"
+role="img"
+aria-labelledby="a41bo1ci51q51otivgzd80ro0ddlynl6"
+aria-hidden="true"
+class="container__icon"
+>
+<title id="a41bo1ci51q51otivgzd80ro0ddlynl6">More...</title>
+<path
+fill-rule="evenodd"
+clip-rule="evenodd"
+d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+></path>
+</svg>
+</div>
+<div class="col-7">
+  <div class="card card__main">
+    <img
+    src="https://res.cloudinary.com/practicaldev/image/fetch/s--T9V-4Pl3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cc1iscwbl7v1o0ggbkfe.png"
+    class="card-img-top img-fluid"
+    alt="Typescript heading"
     />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body></body>
+    
+    <div class="card-body px-5 py-4">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://i.pravatar.cc/90?image=50"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
+        </a>
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            IroncladDev
+          </a>
+          <div class="text-xs text-gray">
+            Posted on Sep 10
+          </div>
+        </div>
+      </div>
+      <h1 class="card-text fw-bold">
+        The greatest skill issue of all time: building my first typescript application
+      </h1>
+      <div class="card__tags card__tags-links text">
+        <a class="text-decoration-none link-dark p-1" href=""
+        >#javascript</a
+        >
+        <a class="text-decoration-none link-dark p-1" href=""
+        >#webdev</a
+        >
+        <a class="text-decoration-none link-dark p-1" href=""
+        >#begginers</a
+        >
+        <a class="text-decoration-none link-dark p-1" href=""
+        >#programming</a
+        >
+      </div>
+      <!-- ARTICLE CONTENT TEXT -->
+      <div class="mt-5 fs-5 article-content">
+        <p>I recently just got a job at <a href="https://replit.com">https://replit.com</a> in which I had to learn <strong>Typescript</strong> and <strong>Supabase</strong> for an upcoming project.  I decided to build a personal project with the two new technologies I was going to learn, but <strong>little did I know</strong> that it would hit me in the face <strong>really</strong> hard.</p>
+        
+        <p><a href="https://replit.com/@masfrost/social-diffusion?v=1">This project</a> inspired me a lot and I wanted to make something similar, so I did a bit of brainstorming on some things that could be improved, and went <strong>head-on</strong> into the development process. </p>
+        
+        <p>I started with my favorite stack which was <strong>Next.js + SCSS</strong>, set up integration with <strong>supabase db</strong> + <strong>typescript</strong>, and set off.</p>
+        
+        <p>For the first two or three days, developing was smooth and I was able to get a <strong>lot</strong> of things done.  At the <strong>last</strong> day, which was Sep 10th, 2022, I was <strong>just about</strong> to run <code>npm run build</code>, kick my project into production, and release it.</p>
+        
+        <p>After doing so, I nearly a <strong>thousand</strong> typescript errors, resulting in an app that would not even dare to compile.  My jaw <strong>hit the floor</strong> - after all this work, I had about <strong>twice as much</strong> as before.  I never realized that next.js didn't have typescript linting in development mode 🤯.  I set off with the help of <strong>stackoverflow</strong> and <strong>typescript's official website</strong> and moved on to continuously fix typescript errors for the next <strong>four to five</strong> hours.</p>
+        
+        <p>It was a pretty good laugh for the replit discord community and probably for a lot of you guys as well 😂.  Of course I can't go without a laugh about how <strong>silly</strong> a mistake I made.</p>
+        
+        <p>It would turn out that I coded in <strong>plain javascript</strong> even in typescript and tsx files for about <strong>90%</strong> of the time.  Things worked, so I moved on <strong>without taking notice</strong> of stuff, but it would end up biting me back later.  I <em>did</em> code the entire thing within replit, which runs entirely in the browser.  That means no <strong>in-editor</strong> typescript parsing.  Next time, I sure will <strong>not</strong> do that again.</p>
+        
+        <p>After fixing all the bugs, I finally released my project.  I'll tell you what: there is <strong>nothing more satisfying</strong> than seeing tsc tell you that there are <strong>zero</strong> typescript errors.</p>
+        
+        
+        <hr>
+        
+        <p>After all this pain, I really want to shout "I HATE TYPESCRIPT", but it was 100% my fault for causing this.  Typescript is definitely something I will use again - and while developing, I sure will use my <strong>types</strong>, <strong>interfaces</strong>, and all the other good stuff.</p>
+        
+        <p>Surprisingly, this was probably one of my <strong>first projects</strong> where I was able to push to production with nearly <strong>zero bugs</strong>.  Now I know why y'all love typescript so much!</p>
+        
+        <p>I did, in the last five hours of development, manage to learn a <strong>majority</strong> of the things in typescript, which was quite helpful.</p>
+        
+        
+        <hr>
+        
+        <p>So of <strong>course</strong> I can't end this post without showcasing my <strong>project</strong> ;)</p>
+        
+        <p><a href="https://replit.com/@IroncladDev/Fendorea">https://replit.com/@IroncladDev/Fendorea</a></p>
+        
+        <p>I'd love some feedback on the project if you have any, and do smash the follow button on replit if you enjoyed it.</p>
+        
+        
+        <hr>
+        
+        <p>Happy coding y'all - and for you guys that have just started typescript, <strong>don't make the same mistake I did</strong></p>
+        
+        
+      </div>
+    </div>
+    
+<!-- DISCUSSION SECTION -->
+  </div>
+</div>
+
+    <!-- ASIDE RIGHT -->
+<div class="col-4">
+  <div class="card card-profile rounded-3 mb-3">
+    <div class="card-body d-grid gap-3">
+      <h5 class="card-title d-flex align-items-end">
+        <img
+        src="https://i.pravatar.cc/90?image=50"
+        alt=""
+        class="rounded-circle me-2 d-inline-block"
+        />
+        <div class="mt-4 fw-bold">IroncladDev</div>
+      </h5>
+      <div class="d-grid">
+        <a href="#" class="btn btn-purple">Follow</a>
+      </div>
+      <div class="card-text fw-light">
+        Sixteen-year-old fullstack developer who is addicted to Next.js
+        | Moderator at @Replit | Web developer at @SaasBox
+      </div>
+      <div class="card-text d-flex flex-column gap-3">
+        <div>
+          <b class="text-xs text-uppercase d-block">Location</b>
+          <span class="fw-light"> Dallas TX USA </span>
+        </div>
+        <div>
+          <b class="text-xs text-uppercase d-block">Education</b>
+          <span class="fw-light"> Homeschooled </span>
+        </div>
+        <div>
+          <b class="text-xs text-uppercase d-block">Joined</b>
+          <span class="fw-light"> Dec 15, 2020 </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card rounded-3">
+    <h4 class="fs-5 fw-bold p-3 m-0">
+      More from <a href="" class="link-purple">IroncladDev</span>
+      </h4>
+      <div class="list-group border-light">
+        <a
+        href="#"
+        class="list-group-item border-light list-group-item-action rounded-0 border-0 border-bottom p-3 text-link-primary"
+        aria-current="true"
+        >
+        <p class="mb-1">
+          Confessing some regretful stuff I did on my programming
+          journey
+        </p>
+        <div class="d-flex text-link-secondary fw-light gap-2">
+          <small>#watercooler</small>
+          <small>#discuss</small>
+          <small>#programming</small>
+        </div>
+      </a>
+      <a
+      href="#"
+      class="list-group-item border-light list-group-item-action rounded-0 border-0 border-bottom p-3 text-link-primary"
+      >
+      <p class="mb-1">
+        My newest dev project is done - YouBarter.us | 🔥Roast Me 🔥
+      </p>
+      <div class="d-flex text-link-secondary fw-light gap-2">
+        <small>#showdev</small>
+        <small>#javascript</small>
+        <small>#react</small>
+      </div>
+    </a>
+    <a
+    href="#"
+    class="list-group-item border-light list-group-item-action rounded-0 border-0 border-bottom p-3 text-link-primary"
+    >
+    <p class="mb-1">
+      How to make your clients choose web devs over nocode tools
+    </p>
+    <div
+    class="d-flex text-link-secondary fw-light gap-2 flex-wrap"
+    >
+    <small>#webdev</small>
+    <small>#programming</small>
+    <small>#tutorial</small>
+    <small>#career</small>
+  </div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
