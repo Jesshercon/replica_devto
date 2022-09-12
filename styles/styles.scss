@@ -1,4 +1,6 @@
 @import "_variables";
+
+
 // Utilities
 .text-xs {
   font-size: 0.75rem;
@@ -40,17 +42,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 !important; 
 }
 .navbar {
-  .container {
-    .img_devto-logo {
+    .img__devto-logo {
       height: 38px;
       width: 50px;
       img {
         max-width: 100%;
       }
-    }
   }
   .bell__notification-icon {
     height: 30px;
@@ -68,15 +68,22 @@ body {
 }
 
 .form__navbar {
+  // .input__loupe-control {
+  //   background: url(../assets/loupe.svg) no-repeat;
+  //   position: absolute;
+  // }
   .btn-search {
     background-color: white;
     border: 1px solid #ced4da;
     border-left: 0;
+    
   }
   .btn-search:hover {
     background-color: rgba($purple-primary, 0.2);
   }
 }
+
+
 //ASIDES AND MAIN
 
 .container {
@@ -137,4 +144,11 @@ body {
 
 .card-footer-container {
   background-color: #e5e5e5;
+}
+
+
+// Articles styles
+
+article {
+  cursor: pointer;
 }
