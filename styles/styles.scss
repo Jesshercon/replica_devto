@@ -5,7 +5,7 @@
 }
 
 .text-purple {
-  color: $purple-primary-100;
+  color: $purple-primary;
 }
 
 .text-gray {
@@ -21,10 +21,10 @@
 }
 
 .link-purple {
-  color: $purple-primary-100;
+  color: $purple-primary;
   text-decoration: none;
   &:hover {
-    color: $purple-primary-100;
+    color: $purple-primary;
   }
 }
 .btn-outline-purple {
@@ -99,10 +99,10 @@ body {
 
 // Buttons
 .btn-purple {
-  background-color: $purple-primary-100;
+  background-color: $purple-primary;
   color: white;
   &:hover {
-    background-color: $purple-primary-200;
+    background-color: $purple-primary;
     color: white;
   }
 }
@@ -133,13 +133,8 @@ body {
 
 //comments container
 
-.section__container {
-  .comments__container {
-    .comments__container-box {
-    }
-  }
-}
 //footer styles
-.card-footer {
+
+.card-footer-container {
   background-color: #e5e5e5;
 }
