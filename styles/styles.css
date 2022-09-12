@@ -3,7 +3,11 @@
 }
 
 .text-purple {
+<<<<<<< HEAD
   color: rgb(59, 73, 223);
+=======
+  color: #3b49df;
+>>>>>>> develop
 }
 
 .text-gray {
@@ -19,11 +23,19 @@
 }
 
 .link-purple {
+<<<<<<< HEAD
   color: rgb(59, 73, 223);
   text-decoration: none;
 }
 .link-purple:hover {
   color: rgb(59, 73, 223);
+=======
+  color: #3b49df;
+  text-decoration: none;
+}
+.link-purple:hover {
+  color: #3b49df;
+>>>>>>> develop
 }
 
 .btn-outline-purple {
@@ -86,7 +98,11 @@ body {
   color: white;
 }
 .btn-purple:hover {
+<<<<<<< HEAD
   background-color: rgb(47, 58, 178);
+=======
+  background-color: #3b49df;
+>>>>>>> develop
   color: white;
 }
 
@@ -109,10 +125,15 @@ body {
   margin: 40px auto;
 }
 
+<<<<<<< HEAD
 .card-footer {
   background-color: #e5e5e5;
 }
 
 article {
   cursor: pointer;
+=======
+.card-footer-container {
+  background-color: #e5e5e5;
+>>>>>>> develop
 }/*# sourceMappingURL=styles.css.map */
