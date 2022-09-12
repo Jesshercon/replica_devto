@@ -160,9 +160,18 @@ article {
   font-weight: light;
 }
 
+@mixin hover_elements($hover_color) {
+  color: $hover_color !important;
+}
+
 .nav-link:hover {
-   color: $purple-primary !important;
- }
+@include hover_elements($purple-primary) ; 
+}
+
+.bell__notification-icon:hover{
+  // @include hover_elements($purple-primary);
+  fill: $purple-primary;
+}
 
 
  .dropdown-menu {

@@ -126,6 +126,10 @@ article {
   color: #3b49df !important;
 }
 
+.bell__notification-icon:hover {
+  fill: #3b49df;
+}
+
 .dropdown-menu {
   width: 250px;
   height: 306px;
