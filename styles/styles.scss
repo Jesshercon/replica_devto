@@ -45,14 +45,12 @@ body {
   background-color: #f5f5f5;
 }
 .navbar {
-  .container {
-    .img_devto-logo {
+    .img__devto-logo {
       height: 38px;
       width: 50px;
       img {
         max-width: 100%;
       }
-    }
   }
   .bell__notification-icon {
     height: 30px;
@@ -70,15 +68,22 @@ body {
 }
 
 .form__navbar {
+  // .input__loupe-control {
+  //   background: url(../assets/loupe.svg) no-repeat;
+  //   position: absolute;
+  // }
   .btn-search {
     background-color: white;
     border: 1px solid #ced4da;
     border-left: 0;
+    
   }
   .btn-search:hover {
     background-color: rgba($purple-primary, 0.2);
   }
 }
+
+
 //ASIDES AND MAIN
 
 .container {
@@ -145,10 +150,3 @@ body {
 .card-footer {
   background-color: #e5e5e5;
 }
-
-
-
-// .div__link-notifications {
-//   width: 2px;
-//   height: 2px;
-// }
