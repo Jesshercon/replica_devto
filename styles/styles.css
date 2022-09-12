@@ -111,4 +111,8 @@ body {
 
 .card-footer {
   background-color: #e5e5e5;
+}
+
+article {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
