@@ -160,8 +160,18 @@ article {
   font-weight: light;
 }
 
-.nav-item:hover {
-  color: $purple-primary ;
-  text-transform: uppercase;
-}
+.nav-link:hover {
+   color: $purple-primary !important;
+ }
 
+
+ .dropdown-menu {
+  width: 250px;
+  height: 306px;
+ }
+
+.dropdown__user-options {
+  .dropdown-item {
+    padding: 8px 16px;
+   }
+}
