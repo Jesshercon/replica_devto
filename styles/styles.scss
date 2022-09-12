@@ -111,6 +111,7 @@ body {
   &:hover {
     background-color: $purple-primary;
     color: white;
+    text-decoration: underline;
   }
 }
 
@@ -152,3 +153,15 @@ body {
 article {
   cursor: pointer;
 }
+
+// Main styles
+
+.nav__list-top {
+  font-weight: light;
+}
+
+.nav-item:hover {
+  color: $purple-primary ;
+  text-transform: uppercase;
+}
+
