@@ -111,6 +111,7 @@ body {
   &:hover {
     background-color: $purple-primary;
     color: white;
+    text-decoration: underline;
   }
 }
 
@@ -163,3 +164,4 @@ article {
   color: $purple-primary ;
   text-transform: uppercase;
 }
+
