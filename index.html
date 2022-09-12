@@ -25,7 +25,7 @@
 
  <!-- NAVBAR -->
  <nav class="navbar sticky-top container-fluid" style="background-color: #FFFFFF" ;>
-  <div class="container-lg d-flex justify-content-between">
+  <div class="container d-flex justify-content-between">
     <!-- Logo y search bar se colocan a la izquierda -->
     <div class="d-flex">
       <div class="me-3">
@@ -70,34 +70,70 @@
 </div>
 </nav>
 
-<!-- posts blogs -->
+<!-- blog posts selector -->
 
-<nav class="nav nav__list-top m-3">
-  <div class="div div__container-fluid container d-flex justify-content-between">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active text-secondary" aria-current="page" href="#">Relevant</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-secondary" href="#">Latest</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-secondary" href="#">Top</a>
-      </li>
-    </ul>
-</div>
-</nav>
+<main class="main main__card-center container row d-flex justify-content-center">
+  <nav class="nav nav__list-top col-md-6 offset-md-3 justify-content-center">
+    <div class="div div__container-fluid container d-flex justify-content-between">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active text-secondary" aria-current="page" href="#">Relevant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Latest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Top</a>
+        </li>
+      </ul>
+  </div>
+  </nav>
 
-<!-- Cards start -->
-
-<div class="card mb-3">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <!-- Cards start -->
+<div class="div div__container-card col-md-6 offset-md-3">
+  <div class="card justify-content-center">
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--T9V-4Pl3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cc1iscwbl7v1o0ggbkfe.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div class="d-flex align-items-center mb-4">
+          <a href="" class="me-1">
+            <img
+            src="https://i.pravatar.cc/90?image=50"
+            alt=""
+            width="40"
+            class="rounded-circle me-2 d-inline-block"
+            />
+          </a>
+          <div>
+            <a href="" class="fw-bold link-dark text-decoration-none">
+              IroncladDev
+            </a>
+            <div class="text-xs text-gray">
+              Posted on Sep 10
+            </div>
+          </div>
+        </div>
+        <div class="div div__container-info">
+        <h4 class="card-title">The greatest skill issue of all time: building my first typescript application</h4>
+        <div class="card__tags card__tags-links text">
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#javascript</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#webdev</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#begginers</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#programming</a
+          >
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
   </div>
 </div>
+</main>
 
   </body>
 </html>
