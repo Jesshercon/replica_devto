@@ -156,10 +156,10 @@ article {
 // Main styles
 
 .nav__list-top {
-  font-weight: bold;
+  font-weight: light;
 }
 
 .nav-item:hover {
+  color: $purple-primary ;
   text-transform: uppercase;
-  color: rgba($purple-primary, 0.2);
 }

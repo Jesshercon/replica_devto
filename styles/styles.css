@@ -118,10 +118,10 @@ article {
 }
 
 .nav__list-top {
-  font-weight: bold;
+  font-weight: light;
 }
 
 .nav-item:hover {
+  color: #3b49df;
   text-transform: uppercase;
-  color: rgba(59, 73, 223, 0.2);
 }/*# sourceMappingURL=styles.css.map */
