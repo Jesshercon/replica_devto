@@ -152,3 +152,14 @@ body {
 article {
   cursor: pointer;
 }
+
+// Main styles
+
+.nav__list-top {
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  text-transform: uppercase;
+  color: rgba($purple-primary, 0.2);
+}
