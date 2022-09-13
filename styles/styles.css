@@ -114,6 +114,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.card__footer {
+  width: 100vw;
+}
+
 article {
   cursor: pointer;
 }
