@@ -156,7 +156,21 @@ article {
   font-weight: light;
 }
 
-.nav-item:hover {
-  color: $purple-primary;
-  text-transform: uppercase;
+@mixin hover_elements($hover_color) {
+  color: $hover_color !important;
+}
+
+.nav-link:hover {
+  @include hover_elements($purple-primary);
+}
+
+.bell__notification-icon:hover {
+  // @include hover_elements($purple-primary);
+  fill: $purple-primary;
+}
+
+.dropdown__user-options {
+  .dropdown-item {
+    padding: 8px 16px;
+  }
 }
