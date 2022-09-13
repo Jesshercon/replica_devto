@@ -1,94 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV Community</title>
-    <link rel="shotcut icon" href="./assets/dev-black.png">
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css"/>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-
- <!-- NAVBAR -->
- <nav class="navbar sticky-top container-fluid" style="background-color: #FFFFFF" ;>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEV Community</title>
+  <link rel="shotcut icon" href="./assets/dev-black.png" />
+  <!-- CSS only -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav
+  class="navbar sticky-top container-fluid"
+  style="background-color: #ffffff"
+  ;
+  >
   <div class="container d-flex justify-content-between">
     <!-- Logo y search bar se colocan a la izquierda -->
     <div class="d-flex">
       <div class="me-3">
         <div class="div div__container-img">
-          <a class="navbar-brand" href="#"><img class="div__nav-menu img__devto-logo" src="./assets/resized_logo_UQww2soKuUsjaOGNB38o.png" alt=""></a>
+          <a class="navbar-brand" href="#">
+            <img
+            class="div__nav-menu img__devto-logo"
+            src="./assets/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt=""
+            />
+          </a>
         </div>
       </div>
       <div class="container text-start col align-items-start">
-      <form class="form__navbar" action="">
-        <div class="input-group">
-          <input type="text" class="form-control input__loupe-control" placeholder="Search..." />
-          <button class="btn btn-search" type="button">
-            <img width="20" src="/assets/loupe.svg" alt="" />
-          </button>
-        </div>
-       </form>
+        <form class="form__navbar" action="">
+          <div class="input-group">
+            <input
+            type="text"
+            class="form-control input__loupe-control"
+            placeholder="Search..."
+            />
+            <button class="btn btn-search" type="button">
+              <img width="20" src="/assets/loupe.svg" alt="" />
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- create-post button, bell and avatar are placed to the right -->
     <div class="d-flex align-items-center gap-3 dropdown">
-      <button class="btn btn-purple btn-outline-purple fw-bold" type="submit">
-        Create Post
-      </button>
-      <img
-      class="bell__notification-icon"
-      src="./assets/bell.svg"
-      alt=""
-      />
       <button
-      type="button" data-bs-toggle="dropdown" aria-expanded="false"
-      class="avatar avatar__button p-1 dropdown-toggle"
-      id="member-menu-button"
+      class="btn btn-purple btn-outline-purple fw-bold"
+      type="submit"
       >
-      <img
-      class="avatar__icon-image rounded-circle"
-      alt=""
-      id="nav-profile-image"
-      src="https://res.cloudinary.com/practicaldev/image/fetch/s--iEKpXQPg--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/922746/4331f4ce-8208-4936-bed4-d88204212fcd.jpeg"
-      />
+      Create Post
     </button>
-    <ul class="dropdown-menu dropdown-menu-light">
-      <li><a class="dropdown-item active" href="#">Jéssica</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Dashboard</a></li>
-      <li><a class="dropdown-item" href="#">Create Post</a></li>
-      <li><a class="dropdown-item" href="#">Reading List</a></li>
-      <li><a class="dropdown-item" href="#">Settings</a></li>      
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Sign Out</a></li>
-    </ul>
-  </div>
+    <img class="bell__notification-icon" src="./assets/bell.svg" alt="" />
+    <button
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    class="avatar avatar__button p-1 dropdown-toggle"
+    id="member-menu-button"
+    >
+    <img
+    class="avatar__icon-image rounded-circle"
+    alt=""
+    id="nav-profile-image"
+    src="https://res.cloudinary.com/practicaldev/image/fetch/s--iEKpXQPg--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/922746/4331f4ce-8208-4936-bed4-d88204212fcd.jpeg"
+    />
+  </button>
+  <ul class="dropdown-menu dropdown-menu-light">
+    <li>
+      <a class="dropdown-item active" href="#">Jéssica</a>
+    </li>
+    <li>
+      <hr class="dropdown-divider" />
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">Dashboard</a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">Create Post</a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">Reading List</a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">Settings</a>
+    </li>
+    <li>
+      <hr class="dropdown-divider" />
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">Sign Out</a>
+    </li>
+  </ul>
+</div>
 </div>
 </nav>
-
-<!-- blog posts selector -->
-
-<main class="main main__card-center container row d-flex justify-content-center">
-  <nav class="nav nav__list-top col-md-6 offset-md-3 mt-2 mb-2 justify-content-center">
-    <div class="div div__container-fluid container d-flex justify-content-between">
+<!-- ASIDES/ MAIN -->
+<div class="container">
+  <div class="row">
+    <!-- aside izq -->
+    <div class="col-3">aside izquierdo
+      
+    </div>
+    <main class="main main__card-center col-6">
+      <!-- top text -->
+      <nav
+      class="nav nav__list-top  mt-2 mb-2 justify-content-center"
+      >
+      <div
+      class="div div__container-fluid container d-flex"
+      >
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#">Relevant</a>
+          <a
+          class="nav-link active text-secondary"
+          aria-current="page"
+          href="#"
+          >Relevant</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link text-secondary" href="#">Latest</a>
@@ -97,103 +140,150 @@
           <a class="nav-link text-secondary" href="#">Top</a>
         </li>
       </ul>
-  </div>
-  </nav>
-
-  <!-- Cards start -->
-<div class="div div__container-card col-md-6 offset-md-3">
-  <article onclick="window.location.href='./post.html'" class="card justify-content-center">
-    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--T9V-4Pl3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cc1iscwbl7v1o0ggbkfe.png" class="card-img-top" alt="...">
-     <div class="card-body">
-        <div class="d-flex align-items-center mb-4">
-          <a href="" class="me-1">
-            <img
-            src="https://i.pravatar.cc/90?image=50"
-            alt=""
-            width="40"
-            class="rounded-circle me-2 d-inline-block"
-            />
-          </a>
-          <div>
-            <a href="" class="fw-bold link-dark text-decoration-none">
-              IroncladDev
-            </a>
-            <div class="text-xs text-gray">
-              Posted on Sep 10
-            </div>
-          </div>
-        </div>
-        <div class="div div__container-info g-col-6 offset-md-1">
-          <h4 class="card-title">The greatest skill issue of all time: building my first typescript application</h4>
-            <div class="card__tags card__tags-links text">
-              <a class="text-decoration-none link-dark p-1" href=""
-              >#javascript</a
-              >
-              <a class="text-decoration-none link-dark p-1" href=""
-              >#webdev</a
-              >
-              <a class="text-decoration-none link-dark p-1" href=""
-              >#begginers</a
-              >
-              <a class="text-decoration-none link-dark p-1" href=""
-              >#programming</a
-              >
-            </div>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <!-- Reaction footer -->
-          <footer class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3">
-            <div class=" comment__footer-icon">
-              <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-                <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
-               
-                  <span data-testid="tooltip" class="crayons-tooltip__content">
-                    71 Reactions
-                  </span>
-              
-              </button>
-              <button class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
-                <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-        
-               <span class="hidden m:inline-block">4 Comments</span>
-              </button>
-
-            </div>
-            <!-- <div class=" comment__footer-icon"></div> -->
-             <div class="div div__container-save">
-              <small class="small__container-read">4 min read</small>
-              <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-                <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>               
-              </button>
-             </div> 
-          </footer>
-      </div>
     </div>
-  </article>
-
+  </nav>
+  <!-- Cards start -->
+  <div class="div div__container-card ">
+    <article
+    onclick="window.location.href='./post.html'"
+    class="card justify-content-center"
+    >
+    <img
+    src="https://res.cloudinary.com/practicaldev/image/fetch/s--T9V-4Pl3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cc1iscwbl7v1o0ggbkfe.png"
+    class="card-img-top"
+    alt="..."
+    />
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://i.pravatar.cc/90?image=50"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
+        </a>
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            IroncladDev
+          </a>
+          <div class="text-xs text-gray">Posted on Sep 10</div>
+        </div>
+      </div>
+      <div class="div div__container-info g-col-6 offset-md-1">
+        <h4 class="card-title">
+          The greatest skill issue of all time: building my first
+          typescript application
+        </h4>
+        <div class="card__tags card__tags-links text">
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#javascript</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#webdev</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#begginers</a
+          >
+          <a class="text-decoration-none link-dark p-1" href=""
+          >#programming</a
+          >
+        </div>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+        <!-- Reaction footer -->
+        <footer
+        class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3"
+        >
+        <div class="comment__footer-icon">
+          <button
+          class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+          >
+          <svg
+          class="crayons-icon"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+          ></path>
+        </svg>
+        <span
+        data-testid="tooltip"
+        class="crayons-tooltip__content"
+        >
+        71 Reactions
+      </span>
+    </button>
+    <button
+    class="btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex"
+    href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"
+    >
+    <svg
+    class="crayons-icon"
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+    ></path>
+  </svg>
+  <span class="hidden m:inline-block">4 Comments</span>
+</button>
+</div>
+<!-- <div class=" comment__footer-icon"></div> -->
+<div class="div div__container-save">
+  <small class="small__container-read">4 min read</small>
+  <button
+  class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+  >
+  <svg
+  class="crayons-icon c-btn__icon"
+  aria-hidden="true"
+  focusable="false"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+  <path
+  d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+  ></path>
+</svg>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</article>
 <!-- second card -->
 <article class="card article article__container-second mt-2">
   <div class="card">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-4">
-      <a href="" class="me-1">
-        <img
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--G4JhcU4H--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/712381/bdc8b5f8-f1f1-462e-b2f5-3ea0ec08ff2b.png"
-        alt=""
-        width="40"
-        class="rounded-circle me-2 d-inline-block"
-        />
-      </a>
-      <div>
-        <a href="" class="fw-bold link-dark text-decoration-none">
-          Avi Avinav
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--G4JhcU4H--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/712381/bdc8b5f8-f1f1-462e-b2f5-3ea0ec08ff2b.png"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
         </a>
-        <div class="text-xs text-gray">
-          Posted on Sep 12 (1 day ago)
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            Avi Avinav
+          </a>
+          <div class="text-xs text-gray">
+            Posted on Sep 12 (1 day ago)
+          </div>
         </div>
       </div>
-    </div>
-    <div class="div div__container-info g-col-6 offset-md-1">
-      <h4 class="card-title">The Making of A React Component Library</h4>
+      <div class="div div__container-info g-col-6 offset-md-1">
+        <h4 class="card-title">
+          The Making of A React Component Library
+        </h4>
         <div class="card__tags card__tags-links text">
           <a class="text-decoration-none link-dark p-1" href=""
           >#javascript</a
@@ -208,59 +298,97 @@
           >#webdev</a
           >
         </div>
-      <!-- Reaction footer -->
-      <footer class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3">
-        <div class=" comment__footer-icon">
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
-           
-              <span data-testid="tooltip" class="crayons-tooltip__content">
-                134 Reactions
-              </span>
-          
-          </button>
-          <button class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-    
-           <span class="hidden m:inline-block">11 Comments</span>
-          </button>
-
-        </div>
-        <!-- <div class=" comment__footer-icon"></div> -->
-         <div class="div div__container-save">
-          <small class="small__container-read">5 min read</small>
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>               
-          </button>
-         </div> 
-      </footer>
-    </div>
+        <!-- Reaction footer -->
+        <footer
+        class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3"
+        >
+        <div class="comment__footer-icon">
+          <button
+          class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+          >
+          <svg
+          class="crayons-icon"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+          ></path>
+        </svg>
+        <span
+        data-testid="tooltip"
+        class="crayons-tooltip__content"
+        >
+        134 Reactions
+      </span>
+    </button>
+    <button
+    class="btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex"
+    href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"
+    >
+    <svg
+    class="crayons-icon"
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+    ></path>
+  </svg>
+  <span class="hidden m:inline-block">11 Comments</span>
+</button>
+</div>
+<!-- <div class=" comment__footer-icon"></div> -->
+<div class="div div__container-save">
+  <small class="small__container-read">5 min read</small>
+  <button
+  class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+  >
+  <svg
+  class="crayons-icon c-btn__icon"
+  aria-hidden="true"
+  focusable="false"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+  <path
+  d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+  ></path>
+</svg>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</div>
 </article>
-
 <!-- Third card -->
 <article class="card article article__container-second mt-2">
   <div class="card">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-4">
-      <a href="" class="me-1">
-        <img
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--DJAOp1G5--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/12027/jlhav8Ea.jpeg"
-        alt=""
-        width="40"
-        class="rounded-circle me-2 d-inline-block"
-        />
-      </a>
-      <div>
-        <a href="" class="fw-bold link-dark text-decoration-none">
-          Kristian Ivanov
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--DJAOp1G5--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/12027/jlhav8Ea.jpeg"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
         </a>
-        <div class="text-xs text-gray">
-          Posted on Sep 11 (2 day ago)
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            Kristian Ivanov
+          </a>
+          <div class="text-xs text-gray">
+            Posted on Sep 11 (2 day ago)
+          </div>
         </div>
       </div>
-    </div>
-    <div class="div div__container-info g-col-6 offset-md-1">
-      <h4 class="card-title">Finding remote work in 2022</h4>
+      <div class="div div__container-info g-col-6 offset-md-1">
+        <h4 class="card-title">Finding remote work in 2022</h4>
         <div class="card__tags card__tags-links text">
           <a class="text-decoration-none link-dark p-1" href=""
           >#remote</a
@@ -275,59 +403,100 @@
           >#jobs</a
           >
         </div>
-      <!-- Reaction footer -->
-      <footer class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3">
-        <div class=" comment__footer-icon">
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
-           
-              <span data-testid="tooltip" class="crayons-tooltip__content">
-                87 Reactions
-              </span>
-          
-          </button>
-          <button class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-    
-           <span class="hidden m:inline-block">4 Comments</span>
-          </button>
-
-        </div>
-        <!-- <div class=" comment__footer-icon"></div> -->
-         <div class="div div__container-save">
-          <small class="small__container-read">6 min read</small>
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>               
-          </button>
-         </div> 
-      </footer>
-    </div>
+        <!-- Reaction footer -->
+        <footer
+        class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3"
+        >
+        <div class="comment__footer-icon">
+          <button
+          class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+          >
+          <svg
+          class="crayons-icon"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+          ></path>
+        </svg>
+        <span
+        data-testid="tooltip"
+        class="crayons-tooltip__content"
+        >
+        87 Reactions
+      </span>
+    </button>
+    <button
+    class="btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex"
+    href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"
+    >
+    <svg
+    class="crayons-icon"
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+    ></path>
+  </svg>
+  <span class="hidden m:inline-block">4 Comments</span>
+</button>
+</div>
+<!-- <div class=" comment__footer-icon"></div> -->
+<div class="div div__container-save">
+  <small class="small__container-read">6 min read</small>
+  <button
+  class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+  >
+  <svg
+  class="crayons-icon c-btn__icon"
+  aria-hidden="true"
+  focusable="false"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+  <path
+  d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+  ></path>
+</svg>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</div>
 </article>
-
 <!-- fourth card -->
 <article class="card article article__container-second mt-2">
   <div class="card">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-4">
-      <a href="" class="me-1">
-        <img
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--uAvUyAYM--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5804/9c8d9724-6aea-4480-8832-40c47db5d14b.jpeg"
-        alt=""
-        width="40"
-        class="rounded-circle me-2 d-inline-block"
-        />
-      </a>
-      <div>
-        <a href="" class="fw-bold link-dark text-decoration-none">
-          Nevo David 
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--uAvUyAYM--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5804/9c8d9724-6aea-4480-8832-40c47db5d14b.jpeg"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
         </a>
-        <div class="text-xs text-gray">
-          Posted on Sep 12 (1 day ago)
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            Nevo David
+          </a>
+          <div class="text-xs text-gray">
+            Posted on Sep 12 (1 day ago)
+          </div>
         </div>
       </div>
-    </div>
-    <div class="div div__container-info g-col-6 offset-md-1">
-      <h4 class="card-title">Building an interactive screen-sharing app with Puppeteer and React 🤯</h4>
+      <div class="div div__container-info g-col-6 offset-md-1">
+        <h4 class="card-title">
+          Building an interactive screen-sharing app with Puppeteer
+          and React 🤯
+        </h4>
         <div class="card__tags card__tags-links text">
           <a class="text-decoration-none link-dark p-1" href=""
           >#react</a
@@ -342,59 +511,97 @@
           >#opensource</a
           >
         </div>
-      <!-- Reaction footer -->
-      <footer class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3">
-        <div class=" comment__footer-icon">
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
-           
-              <span data-testid="tooltip" class="crayons-tooltip__content">
-                38 Reactions
-              </span>
-          
-          </button>
-          <button class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-    
-           <span class="hidden m:inline-block">Add comment</span>
-          </button>
-
-        </div>
-        <!-- <div class=" comment__footer-icon"></div> -->
-         <div class="div div__container-save">
-          <small class="small__container-read">12 min read</small>
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>               
-          </button>
-         </div> 
-      </footer>
-    </div>
+        <!-- Reaction footer -->
+        <footer
+        class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3"
+        >
+        <div class="comment__footer-icon">
+          <button
+          class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+          >
+          <svg
+          class="crayons-icon"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+          ></path>
+        </svg>
+        <span
+        data-testid="tooltip"
+        class="crayons-tooltip__content"
+        >
+        38 Reactions
+      </span>
+    </button>
+    <button
+    class="btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex"
+    href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"
+    >
+    <svg
+    class="crayons-icon"
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+    ></path>
+  </svg>
+  <span class="hidden m:inline-block">Add comment</span>
+</button>
+</div>
+<!-- <div class=" comment__footer-icon"></div> -->
+<div class="div div__container-save">
+  <small class="small__container-read">12 min read</small>
+  <button
+  class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+  >
+  <svg
+  class="crayons-icon c-btn__icon"
+  aria-hidden="true"
+  focusable="false"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+  <path
+  d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+  ></path>
+</svg>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</div>
 </article>
-
 <!-- fifth card -->
 <article class="card article article__container-second mt-2">
   <div class="card">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-4">
-      <a href="" class="me-1">
-        <img
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--NLbCegqf--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/813861/11f68241-98b8-4328-b691-269f1ca907ba.jpg"
-        alt=""
-        width="40"
-        class="rounded-circle me-2 d-inline-block"
-        />
-      </a>
-      <div>
-        <a href="" class="fw-bold link-dark text-decoration-none">
-          Mahesh
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <a href="" class="me-1">
+          <img
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--NLbCegqf--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/813861/11f68241-98b8-4328-b691-269f1ca907ba.jpg"
+          alt=""
+          width="40"
+          class="rounded-circle me-2 d-inline-block"
+          />
         </a>
-        <div class="text-xs text-gray">
-          Posted on Sep 11 (2 day ago)
+        <div>
+          <a href="" class="fw-bold link-dark text-decoration-none">
+            Mahesh
+          </a>
+          <div class="text-xs text-gray">
+            Posted on Sep 11 (2 day ago)
+          </div>
         </div>
       </div>
-    </div>
-    <div class="div div__container-info g-col-6 offset-md-1">
-      <h4 class="card-title">Javascript: Clone object</h4>
+      <div class="div div__container-info g-col-6 offset-md-1">
+        <h4 class="card-title">Javascript: Clone object</h4>
         <div class="card__tags card__tags-links text">
           <a class="text-decoration-none link-dark p-1" href=""
           >#javascript</a
@@ -409,38 +616,380 @@
           >#programming</a
           >
         </div>
-      <!-- Reaction footer -->
-      <footer class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3">
-        <div class=" comment__footer-icon">
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
-           
-              <span data-testid="tooltip" class="crayons-tooltip__content">
-                13 Reactions
-              </span>
-          
-          </button>
-          <button class=" btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex" href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"  >
-            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-    
-           <span class="hidden m:inline-block">4 Comments</span>
-          </button>
-
-        </div>
-        <!-- <div class=" comment__footer-icon"></div> -->
-         <div class="div div__container-save">
-          <small class="small__container-read">1 min read</small>
-          <button class="btn btn-light btn-sm mr-1 reaction-like inline-flex" >
-            <svg class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>               
-          </button>
-         </div> 
-      </footer>
-    </div>
+        <!-- Reaction footer -->
+        <footer
+        class="comment__footer print-hidden d-flex justify-content-between gap-1 mt-3"
+        >
+        <div class="comment__footer-icon">
+          <button
+          class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+          >
+          <svg
+          class="crayons-icon"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+          ></path>
+        </svg>
+        <span
+        data-testid="tooltip"
+        class="crayons-tooltip__content"
+        >
+        13 Reactions
+      </span>
+    </button>
+    <button
+    class="btn btn-light btn-sm actions toggle-reply-form mr-1 inline-flex"
+    href="#/ironcladdev/the-greatest-skill-issue-of-all-time-building-my-first-typescript-application-3g84/comments/new/21hd8"
+    >
+    <svg
+    class="crayons-icon"
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+    ></path>
+  </svg>
+  <span class="hidden m:inline-block">4 Comments</span>
+</button>
+</div>
+<!-- <div class=" comment__footer-icon"></div> -->
+<div class="div div__container-save">
+  <small class="small__container-read">1 min read</small>
+  <button
+  class="btn btn-light btn-sm mr-1 reaction-like inline-flex"
+  >
+  <svg
+  class="crayons-icon c-btn__icon"
+  aria-hidden="true"
+  focusable="false"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+  <path
+  d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+  ></path>
+</svg>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</div>
 </article>
-
-
 </div>
 </main>
-
-  </body>
+<!-- ASIDE RIGHT -->
+<div class=" aside_right col-3 mt-3 mb-2">
+  <div class="card card__satisfaction-survey">
+    <img
+    class="img_top"
+    src="https://res.cloudinary.com/practicaldev/image/fetch/s--ff2NVgR1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ekb1fyzsp9jx2uxdnrqt.png"
+    />
+    <div class="card-body">
+      <h6 class="card-text fw-bold text-dark pb-3">
+        Tell us your thoughts about DEV!
+      </h6>
+      <a
+      class="nav-link text-primary pb-0 mb-0"
+      href="https://us12.list-manage.com/survey?u=85076d6fb7eea423ec9b0de34&id=46f95e37dd&e=*%7CUNIQID%7C*"
+      >→ Take the DEV Satisfaction Survey</a
+      >
+    </div>  
+    </div>
+    <div class="card listings__card mt-3" >
+      
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item d-flex justify-content-between py-3">
+          <p class="fw-400 fw-bold fs-5 m-0 ">Listings</p>
+          <a class="nav-link" href="">See all</a>
+        </li>
+        
+      </ul>
+      
+      
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item py-3">
+          <a class="nav-link" href="">.NET developers for hire</a>
+          <small class="text-muted"><p>forhire</p></small>
+        </li>
+        <li class="list-group-item py-3">
+          <a class="nav-link" href=""
+          >Healthcare software development team for hire</a
+          >
+          <small class="text-muted"><p>forhire</p></small>
+        </li>
+        <li class="list-group-item py-3">
+          <a class="nav-link" href=""
+          >Support your local Ukrainian outsourcing company</a
+          >
+          <small class="text-muted"><p>forhire</p></small>
+        </li>
+        <li class="list-group-item py-3">
+          <a class="nav-link" href="">
+            Senior Java (Fullstack) developer is available for hire!</a
+            >
+            <small class="text-muted"><p>forhire</p></small>
+          </li>
+          <li class="list-group-item py-3">
+            <a class="nav-link" href=""
+            >Multy - open-source tool to deploy and switch to any cloud</a
+            >
+            <small class="text-muted"><p>collabs</p></small>
+          </li>
+          <li class="list-group-item py-3">
+            <a
+            class="nav-link fw-bold d-flex justify-content-center"
+            href=""
+            >Create a Listing</a
+            >
+          </li>
+        </ul>
+      </div>
+    <div class="card card__help mt-3" >
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ">
+          <a class="nav-link pt-2" href=""><h5>#help</h5></a>
+        </li>
+        <li class="list-group-item pb-0 py-3">
+          Get advice while stuck on a project
+          <small>
+            <p class="text-muted">2 comments</p> 
+          </small>
+        </li>
+      </ul>
+    </div>
+    <div class="card card__discuss mt-3" >
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ">
+          <a class="nav-link pt-2" href=""><h5>#help</h5></a>
+        </li>
+        <li class="list-group-item pb-0 py-3">
+          Get advice while stuck on a project
+          <small>
+            <p class="text-muted">2 comments</p> 
+          </small>
+        </li>
+        
+        <li class="list-group-item py-3">
+          Meme Monday 🔥
+          <small>
+            <p class="text-muted">21 comments</p> 
+          </small>
+        </li>
+        <li class="list-group-item py-3">
+          Music Monday — What are you listening to? (Homeland Edition)
+          <small>
+            <p class="text-muted">8 comments</p> 
+          </small>
+        </li>
+        <li class="list-group-item d-flex flex-column py-3">
+          Discussion: Is SQL Server still the best database for .NET Developers?
+          
+          <div class="new__text mt-1 mb-2">
+            <span class="bg-warning mt-1 p-1 rounded">New</span></div>
+            
+          </li>
+          <li class="list-group-item d-flex flex-column py-3">
+            
+            Ask Me Anything about Code Reviews
+            
+            
+            <div class="new__text mt-1 mb-2">
+              <span class="bg-warning mt-1 p-1 rounded">New</span></div>
+              
+            </li>
+          </ul>
+        </div>
+        <div class="card card__explain mt-3" >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a class="nav-link pt-2" href=""><h5>#explainlikeimfive</h5></a>
+            </li>
+            <li class="list-group-item pb-0 py-3">
+              What exactly does REDIS provide? I'm like 1
+              <small>
+                <p class="text-muted">4 comments</p> 
+              </small>
+            </li>
+            
+            <li class="list-group-item py-3">
+              Explain Like I'm Five: What's a standard library?
+              <small>
+                <p class="text-muted">7 comments</p> 
+              </small>
+            </li>
+            <li class="list-group-item py-3">
+              Is MVC pattern used only on monolithic web applications?
+              <small>
+                <p class="text-muted">1 comment</p> 
+              </small>
+            </li>
+            <li class="list-group-item py-3">
+              Explain Pure Functions Like I'm Five
+              <small>
+                <p class="text-muted">11 comments</p> 
+              </small>
+            </li>
+            <li class="list-group-item py-3">
+              Explain Recursion Like I'm Five
+              <small>
+                <p class="text-muted">15 comments</p> 
+              </small>
+            </li>
+            
+            
+          </ul>
+        </div>
+        <div class="card card__challenge mt-3" >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a class="nav-link pt-2" href=""><h5>#challenge</h5></a>
+            </li>
+            <li class="list-group-item pb-0 py-3">
+              Solving the Cash Register challenge in Free Code Camp
+              <small>
+                <p class="text-muted">10 comments</p> 
+              </small>
+            </li>
+            
+            <li class="list-group-item py-3">
+              Thirty Days of Rust: Day One
+              <small>
+                <p class="text-muted">5 comments</p> 
+              </small>
+            </li>
+            <li class="list-group-item d-flex flex-column py-3">
+              1383. Leetcode Solution in CPP
+              <div class="new__text mt-1 mb-2">
+                <span class="bg-warning mt-1 p-1 rounded">New</span></div>
+                
+              </li>
+              <li class="list-group-item py-3">
+                Stuck in SQL query
+                <small>
+                  <p class="text-muted">4 comments</p> 
+                </small>
+              </li>
+              <li class="list-group-item py-3">
+                Daily Challenge #37 - Name Swap
+                <small>
+                  <p class="text-muted">25 comments</p> 
+                </small>
+              </li>
+              
+              
+            </ul>
+          </div>
+          <div class="card card__meta mt-3" >
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a class="nav-link pt-2 " href=""><h5>#meta</h5></a>
+              </li>
+              <li class="list-group-item pb-0 py-3">
+                More engagement through series on dev.to
+                <small>
+                  <p class="text-muted">9 comments</p> 
+                </small>
+              </li>
+            </ul>
+          </div>
+          <div class="card card__watercooler mt-3" >
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">
+                <a class="nav-link pt-2" href=""><h5>#help</h5></a>
+              </li>
+              <li class="list-group-item pb-0 py-3">
+                Meme Monday 🔥
+                <small>
+                  <p class="text-muted">21 comments</p> 
+                </small>
+              </li>
+              
+              <li class="list-group-item py-3">
+                Music Monday -- What are you listening to? (Homeland Edition)
+                <small>
+                  <p class="text-muted">8 comments</p> 
+                </small>
+              </li>
+              <li class="list-group-item py-3">
+                You can build Anything with these 6 characters: []{}!+
+                <small>
+                  <p class="text-muted">10 comments</p> 
+                </small>
+              </li>
+              <li class="list-group-item d-flex flex-column py-3">
+                A day in the life of a developer
+                <small>
+                  <p class="text-muted">1 comment</p> 
+                </small> 
+              </li>
+              <li class="list-group-item d-flex flex-column py-3">
+                Improve Your Productivity With 9 Fantastic Life-Hacks
+                <div class="new__text mt-1 mb-2">
+                  <span class="bg-warning mt-1 p-1 rounded">New</span></div>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div
+    class="card__footer py-5 px-0 card-footer-container text-muted text-xs mt-4"
+    >
+    <p class="card-footer__description text-center">
+      <a class="" href="/">DEV Community 👩‍💻👨‍💻</a> — A constructive and
+      inclusive social network for software developers. With you every step of
+      your journey.
+    </p>
+    <div class="fs-s text-center">
+      <p>
+        Built on <a class="" href="https://www.forem.com">Forem</a> — the
+        <a class="" href="https://dev.to/t/opensource">open source</a>
+        software that powers <a class="" href="https://dev.to">DEV</a> and
+        other inclusive communities.
+      </p>
+      <p>
+        Made with love and
+        <a class="" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV
+        Community 👩‍💻👨‍💻 <span title="copyright">©</span> 2016 - 2022.
+      </p>
+    </div>
+    <div
+    class="footer_logo d-flex justify-content-center align-content-center"
+    >
+    <a href="https://www.forem.com" class=" "
+    ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    class=""
+    >
+    <title>Forem logo</title>
+    <g clip-path="url(#clip0)" fill="#1AB3A6">
+      <path
+      d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <path fill="#fff" d="M0 0h24v24H0z"></path>
+      </clipPath>
+    </defs>
+  </svg>
+</a>
+</div>
+</div>
+</body>
 </html>
