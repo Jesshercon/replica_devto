@@ -1,6 +1,5 @@
 @import "_variables";
 
-
 // Utilities
 .text-xs {
   font-size: 0.75rem;
@@ -42,15 +41,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5 !important; 
+  background-color: #f5f5f5 !important;
 }
 .navbar {
-    .img__devto-logo {
-      height: 38px;
-      width: 50px;
-      img {
-        max-width: 100%;
-      }
+  .img__devto-logo {
+    height: 38px;
+    width: 50px;
+    img {
+      max-width: 100%;
+    }
   }
   .bell__notification-icon {
     height: 30px;
@@ -76,13 +75,11 @@ body {
     background-color: white;
     border: 1px solid #ced4da;
     border-left: 0;
-    
   }
   .btn-search:hover {
     background-color: rgba($purple-primary, 0.2);
   }
 }
-
 
 //ASIDES AND MAIN
 
@@ -147,7 +144,6 @@ body {
   background-color: #e5e5e5;
 }
 
-
 // Articles styles
 
 article {
@@ -165,22 +161,16 @@ article {
 }
 
 .nav-link:hover {
-@include hover_elements($purple-primary) ; 
+  @include hover_elements($purple-primary);
 }
 
-.bell__notification-icon:hover{
+.bell__notification-icon:hover {
   // @include hover_elements($purple-primary);
   fill: $purple-primary;
 }
 
-
- .dropdown-menu {
-  width: 250px;
-  height: 306px;
- }
-
 .dropdown__user-options {
   .dropdown-item {
     padding: 8px 16px;
-   }
+  }
 }
